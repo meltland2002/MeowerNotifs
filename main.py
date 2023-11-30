@@ -21,7 +21,7 @@ def on_message(ws, message):
         print("Connected to Meower!")
         return 0
     try:
-        ismsg = True if j["val"]["post_origin"]=="livechat" else False
+        ismsg = True if j["val"]["post_origin"]=="home" else False
     except:
         ismsg = False
     if not ismsg:
